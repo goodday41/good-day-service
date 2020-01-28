@@ -21,20 +21,14 @@ export default props => {
   const { classes } = props
   return (
     <div>
-      <p className={classes.body + ' ' + classes.topic}>
+      <p className={classes.bodyTopic}>
         対象者ごとに施設を限定し、住宅地から離れた場所で提供されるような従来のデイサービスに対し、共生型(富山型)デイサービスは以下の3つをコンセプトに運営しております。
       </p>
       {firstTopics.map(t => (
-        <Topic
-          key={t.title}
-          classes={classes}
-          title={t.title}
-          text={t.text}
-          isHighlighted
-        />
+        <Topic key={t.title} classes={classes} title={t.title} text={t.text} />
       ))}
       <H2 title="代表からのメッセージ" />
-      <p className={classes.body + ' ' + classes.topic}>
+      <p className={classes.bodyTopic}>
         アットホームな雰囲気で、対象を限定せず子ども〜お年寄りまで様々な年代の方と過ごす事ができ、より多くの「人」と関わりがもてます。
         ひと昔前の日本の地域コミュニティーの様なお互いに協力し合いながら、助け合い精神で子育てや人付き合いをする、いろんな人達が一緒に楽しく過ごす等々の地域密着のデイサービス（コミュニティデイサービス）を提供していきます。
         グッドデイでは、なにげない普通の日常生活と変わらない事していきます〜。

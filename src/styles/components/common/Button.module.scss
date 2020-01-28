@@ -1,0 +1,21 @@
+@import '../../color.scss';
+
+.button-wapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 16px 32px;
+}
+.button {
+  color: $white;
+  background-color: $red;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px;
+  display: block;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}

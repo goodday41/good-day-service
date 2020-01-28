@@ -1,0 +1,77 @@
+@import '../color.scss';
+
+.body {
+  white-space: pre-line;
+  margin: 0;
+}
+.bodyBold {
+  @extend .body;
+  font-weight: bold;
+}
+.bodyHighlighter {
+  @extend .bodyBold;
+  color: $red;
+}
+.bodyTopic {
+  @extend .body;
+}
+.bodyBoldTopic {
+  @extend .bodyBold;
+}
+.routine {
+  font-weight: bold;
+  color: $red;
+  white-space: pre-line;
+  margin-bottom: 4px;
+}
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.target {
+  color: $red;
+  font-weight: bold;
+  white-space: pre-line;
+  margin: 0;
+}
+.red {
+  color: $red;
+}
+.top {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1080px) {
+  .body {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .bodyTopic,
+  .bodyBoldTopic {
+    margin-bottom: 40px;
+  }
+  .target {
+    font-size: 20px;
+  }
+  .routine {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bodyTopic,
+  .bodyBoldTopic {
+    margin-bottom: 24px;
+  }
+  .target {
+    font-size: 14px;
+  }
+}

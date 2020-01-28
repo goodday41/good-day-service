@@ -8,11 +8,9 @@ export default ({ classes, isDesktop }) => {
       isWide={isDesktop}
       body={
         <div>
-          <p
-            className={classes.body + ' ' + classes.bold + ' ' + classes.topic}
-          >
+          <p className={classes.bodyBoldTopic}>
             年齢や障がいの有無にかかわらず誰もが住み慣れた地域でサービスを受けられる場所を「
-            <span className={classes.highlighter}>共生型サービス</span>
+            <span className={classes.bodyHighlighter}>共生型サービス</span>
             」と言います。
           </p>
           <p className={classes.body}>

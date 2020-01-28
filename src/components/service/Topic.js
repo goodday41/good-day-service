@@ -1,22 +1,12 @@
 import React from 'react'
 
 export default props => {
-  const { classes, title, text, isHighlighted } = props
+  const { classes, title, text } = props
 
   return (
     <div>
-      <p
-        className={
-          classes.routine +
-          ' ' +
-          (isHighlighted
-            ? classes.highlighter
-            : classes.bold + ' ' + classes.brown)
-        }
-      >
-        {title}
-      </p>
-      <p className={classes.body + ' ' + classes.topic}>{text}</p>
+      <p className={classes.routine}>{title}</p>
+      <p className={classes.bodyTopic}>{text}</p>
     </div>
   )
 }

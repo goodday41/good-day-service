@@ -1,0 +1,20 @@
+@import '../../color.scss';
+
+.title {
+  color: $brown;
+  border-bottom: 4px solid $red;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1080px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: 32px;
+  }
+}

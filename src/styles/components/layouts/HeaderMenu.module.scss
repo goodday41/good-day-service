@@ -1,0 +1,45 @@
+@import '../../color.scss';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+.linkCurrent {
+  font-weight: bold;
+  padding: 8px;
+  color: $brown;
+  background-color: $yellow;
+  border-radius: 10px;
+}
+.linkOther {
+  font-weight: bold;
+  padding: 8px;
+  color: $yellow;
+  background-color: $brown;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $red;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .root {
+    margin-bottom: 16px;
+    width: 488px;
+  }
+  .linkCurrent,
+  .linkOther {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .root {
+    margin-bottom: 8px;
+    width: 368px;
+  }
+  .linkCurrent,
+  .linkOther {
+    font-size: 16px;
+  }
+}

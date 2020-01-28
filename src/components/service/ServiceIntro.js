@@ -17,17 +17,13 @@ export default props => {
       <ServiceCardList {...props} />
       <div className={classes.end}>
         {isDesktop ? (
-          <p className={classes.body + ' ' + classes.bold}>
+          <p className={classes.bodyBold}>
             ご利用料金の詳細等については、以下の電話番号にご連絡ください！
           </p>
         ) : (
           <>
-            <p className={classes.body + ' ' + classes.bold}>
-              ご利用料金の詳細等については、
-            </p>
-            <p className={classes.body + ' ' + classes.bold}>
-              以下の電話番号にご連絡ください！
-            </p>
+            <p className={classes.bodyBold}>ご利用料金の詳細等については、</p>
+            <p className={classes.bodyBold}>以下の電話番号にご連絡ください！</p>
           </>
         )}
       </div>

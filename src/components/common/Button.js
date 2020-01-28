@@ -1,35 +1,11 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
-import { colors } from 'libs/colors'
-
-const useStyles = makeStyles(theme => ({
-  buttonWapper: {
-    display: 'flex',
-    justifyContent: 'center',
-    margin: '0 16px 32px',
-  },
-  button: {
-    color: colors.white,
-    backgroundColor: colors.red,
-    borderRadius: 10,
-    fontSize: '24px',
-    fontWeight: 'bold',
-    cursor: 'pointer',
-    padding: '16px',
-    display: 'block',
-    transition: '0.3s',
-    '&:hover': {
-      opacity: 0.7,
-    },
-  },
-}))
+import Styles from '../../styles/components/common/Button.module.scss'
 
 export default props => {
   const { link, target, title } = props
-  const classes = useStyles()
   return (
-    <div className={classes.buttonWapper}>
-      <a className={classes.button} href={link} target={target}>
+    <div className={Styles.buttonWapper}>
+      <a className={Styles.button} href={link} target={target}>
         {title}
       </a>
     </div>

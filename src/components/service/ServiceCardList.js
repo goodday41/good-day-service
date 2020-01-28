@@ -41,12 +41,12 @@ export default ({ classes, isDesktop }) => {
         <div>
           <p className={classes.body}>
             提供時間
-            <span className={classes.bold}>{`\n${content.offerTime}\n\n`}</span>
+            <span
+              className={classes.bodyBold}
+            >{`\n${content.offerTime}\n\n`}</span>
           </p>
           <p className={classes.body}>対象者{'\n'}</p>
-          <p className={classes.target + ' ' + classes.highlighter}>
-            {content.target}
-          </p>
+          <p className={classes.target}>{content.target}</p>
         </div>
       }
     />

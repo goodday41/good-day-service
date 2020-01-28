@@ -1,8 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
 import { useMediaQuery } from '@material-ui/core'
-import { fonts } from 'libs/fonts'
-import { colors } from 'libs/colors'
 import Layout from 'components/layout'
 import SEO from 'components/seo'
 import Container from 'components/layouts/Container'
@@ -12,48 +9,11 @@ import KyouseiIntro from 'components/service/KyouseiIntro'
 import KyouseiTopics from 'components/service/KyouseiTopics'
 import ServiceIntro from 'components/service/ServiceIntro'
 import RoutineIntro from '../components/service/RoutineIntro'
-
-const useStyles = makeStyles(theme => ({
-  body: {
-    fontSize: props => fonts(props.isDesktop).body,
-    lineHeight: props => (props.isDesktop ? '32px' : '24px'),
-    whiteSpace: 'pre-line',
-    margin: 0,
-  },
-  routine: {
-    fontSize: props => (props.isDesktop ? 32 : 24),
-    lineHeight: props => (props.isDesktop ? '40px' : '32px'),
-    fontWeight: 'bold',
-    color: colors.brown,
-    whiteSpace: 'pre-line',
-    marginBottom: 4,
-  },
-  end: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    marginBottom: 16,
-  },
-  target: {
-    whiteSpace: 'pre-line',
-    fontSize: props => fonts(props.isDesktop).table,
-    margin: 0,
-  },
-  highlighter: {
-    fontWeight: 'bold',
-    color: colors.red,
-  },
-  bold: { fontWeight: 'bold' },
-  brown: { color: colors.brown },
-  red: { color: colors.red },
-  top: { marginBottom: 40 },
-  topic: { marginBottom: props => (props.isDesktop ? 40 : 24) },
-}))
+import Styles from '../styles/pages/service.module.scss'
 
 export default function() {
   const isDesktop = useMediaQuery('(min-width: 1080px)')
-  const classes = useStyles({ isDesktop })
+  const classes = Styles
 
   return (
     <Layout page="/services" isTop={false}>

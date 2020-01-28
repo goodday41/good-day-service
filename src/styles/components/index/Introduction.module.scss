@@ -1,0 +1,35 @@
+@import '../../color.scss';
+
+.body {
+  line-height: 32px;
+  white-space: pre-line;
+  margin-bottom: 16px;
+}
+.highlighter {
+  font-weight: bold;
+  color: $red;
+}
+.identity {
+  font-weight: bold;
+}
+.subCard {
+  padding: 0;
+}
+
+@media screen and (min-width: 1080px) {
+  .root {
+    margin-bottom: 0;
+  }
+  .subCardBody {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .root {
+    margin-bottom: 24px;
+  }
+  .subCardBody {
+    height: auto;
+  }
+}
