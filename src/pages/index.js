@@ -9,6 +9,7 @@ import TopSubCardList from 'components/index/TopSubCardList'
 import Introduction from 'components/index/Introduction'
 import GoodchanIntro from 'components/index/GoodchanIntro'
 import EventIntro from 'components/index/EventIntro'
+import Booklet from 'components/index/Booklet'
 import Evaluation from 'components/index/Evaluation'
 import Styles from '../styles/pages/index.module.scss'
 
@@ -42,6 +43,14 @@ export default () => {
           <div>
             <H1 title="グッドデイ2大イベント!!" />
             <EventIntro {...{ classes, isDesktop }} />
+          </div>
+        }
+      />
+      <Container
+        body={
+          <div>
+            <H1 title="パンフレット" />
+            <Booklet {...{ classes }} />
           </div>
         }
       />

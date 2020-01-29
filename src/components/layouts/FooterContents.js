@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Styles from '../../styles/components/layouts/FooterContainer.module.scss'
+import Styles from '../../styles/components/layouts/FooterContents.module.scss'
 
 export default () => {
   return (
